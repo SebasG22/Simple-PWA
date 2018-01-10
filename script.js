@@ -16,8 +16,10 @@ document.getElementById('btn-notify').addEventListener('click', () => {
  * @param text
  */
 function sendNotification(title, text) {
-  new Notification(title, {
-    body: text,
-    icon: 'assets/imgs/android-icon-36x36.png'
-});
+    navigator.serviceWorker.ready.then(function(registration) {
+        registration.showNotification(title, {
+            body: text,
+            icon: 'assets/imgs/android-icon-36x36.png'
+        });
+      });
 }

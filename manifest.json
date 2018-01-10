@@ -2,7 +2,6 @@
   "name": "Simple PWA ",
   "short_name": "PWA App",
   "description": "The best application ever",
-  "lang": "es-419",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#C2D0DC",
